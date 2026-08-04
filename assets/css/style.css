@@ -285,3 +285,16 @@ footer.site {
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
 }
+
+/* Embedded CV PDF viewer */
+.cv-embed {
+  width: 100%;
+  height: 800px;
+  border: 1px solid var(--line, #e2e0d8);
+  border-radius: 4px;
+  margin-top: 8px;
+  background: #f4f2ea;
+}
+@media (max-width: 760px) {
+  .cv-embed { height: 60vh; }
+}
