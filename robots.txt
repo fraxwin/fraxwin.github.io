@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fraxwin.github.io/sitemap.xml
