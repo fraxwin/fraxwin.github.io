@@ -9,15 +9,15 @@
   --panel-w: 250px;
   --gap: 56px;
 
-  --ink:      #1c1c1a;
-  --ink-soft: #4a4a46;
+  --ink:      #4a1620;
+  --ink-soft: #6f6f69;
   --ink-mute: #6f6f69;
-  --line:     #e2e0d8;
-  --line-soft:#eeece5;
-  --bg:       #fbfaf6;
-  --panel-bg: #fbfaf6;
-  --accent:   #6b4f2e;   /* muted academic brown, adjustable */
-  --accent-h: #8a6a41;
+  --line:     #bcd4e8;
+  --line-soft:#c9dcec;
+  --bg:       #d6e6f2;
+  --panel-bg: #d6e6f2;
+  --accent:   #7a2e3a;   /* burgundy, adjustable */
+  --accent-h: #6a2530;
 }
 
 * { box-sizing: border-box; }
@@ -70,6 +70,15 @@ body {
   line-height: 1.15;
   margin: 0 0 8px;
   letter-spacing: -0.01em;
+}
+
+.panel__name::after {
+  content: "";
+  display: block;
+  width: 38px;
+  height: 2px;
+  background: var(--accent);
+  margin: 10px 0 4px;
 }
 
 .panel__role {
@@ -141,7 +150,8 @@ body {
 
 .content h2 {
   font-size: 21px;
-  font-weight: 500;
+  font-weight: 600;
+  color: var(--accent);
   margin: 40px 0 12px;
   letter-spacing: -0.01em;
 }
@@ -298,3 +308,4 @@ footer.site {
 @media (max-width: 760px) {
   .cv-embed { height: 60vh; }
 }
+
